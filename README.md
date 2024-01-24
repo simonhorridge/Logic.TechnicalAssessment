@@ -13,3 +13,5 @@ The task is to create a page in the app to submit and view leave requests based 
 1. Create controller actions to populate the form on the first visit, accept the POSTed form data and return the list of submitted leave requests
 
 The form should validate that the email is in the correct format, all fields are required and where IsHalfDay is true the StartDate and EndDate must be the same (ie: half day may only be applied to a single day). Ideally, the form should submit without a page refresh so that the list of leave requests is updated. Finally, please write a unit test for the custom validation logic using a testing framework of your choice.
+
+Please zip your solution and send to j.blake@logicinvestments.co.uk.
