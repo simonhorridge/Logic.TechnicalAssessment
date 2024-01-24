@@ -8,6 +8,7 @@ Consideration should be given to naming, structure/architecture and adherence to
 
 The task is to create a page in the app to submit and view leave requests based on Models\LeaveViewModel. For the sake of the assessment, store the leave requests in the session
 
+1. Clone the repository to your local machine
 1. Create a partial view to show a table of leaave requests
 1. Amend the Views\Leave\Index.cshml to include a form to submit the data, with a placeholder underneath for the list of submitted leave requests
 1. Create controller actions to populate the form on the first visit, accept the POSTed form data and return the list of submitted leave requests
