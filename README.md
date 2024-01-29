@@ -1,6 +1,6 @@
 # Logic Technical Assement
 
-This test is designed to test to assess real-world skills of C#, MVC and ajax/jQuery. You are advised to read the whole task before starting.
+This test is designed to test to assess real-world skills of C#, MVC, Razor and ajax/jQuery. You are advised to read the whole task before starting. For the sake of the assessment, you should favour "out of the box" MVC/Razor language features over "hand-rolled" solutions where possible. 
 
 You may complete this however you see fit. Feel free to use online resources and include nuget packages as required. Also, please change/move/refactor existing code as you see fit. That being said, please note you will be expected to talk through your solution if you are selected for interview.
 
