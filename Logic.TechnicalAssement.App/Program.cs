@@ -1,8 +1,14 @@
+using Logic.TechnicalAssement.App.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
+
+ConfigureDI(builder.Services);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,8 +26,15 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+static void ConfigureDI(IServiceCollection services)
+{
+    services.AddScoped<ILeaveRequestService, LeaveRequestService>();
+}

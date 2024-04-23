@@ -1,0 +1,30 @@
+@model IEnumerable<Logic.TechnicalAssement.App.Models.LeaveViewModel>
+@using InvestmentManagement.Shared.Extensions
+
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Leave Type</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Is Half Day</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.LeaveType.GetDisplayName()</td>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+                <td>@item.Email</td>
+                <td>@item.StartDate?.ToString("dd/MM/yyyy")</td>
+                <td>@item.EndDate?.ToString("dd/MM/yyyy")</td>
+                <td>@(item.IsHalfDay ? "Yes" : "No")</td>
+            </tr>
+        }
+    </tbody>
+</table>

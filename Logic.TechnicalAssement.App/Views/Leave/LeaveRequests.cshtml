@@ -1,0 +1,6 @@
+﻿@model IEnumerable<Logic.TechnicalAssement.App.Models.LeaveViewModel>
+@{
+    Layout = "_Layout";
+}
+
+@await Html.PartialAsync("_LeaveRequestsTable", Model)
